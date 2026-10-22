@@ -1,0 +1,18 @@
+{
+  "experiment": "utility_distribution",
+  "paper": "Section 5.3.5, Table 16",
+  "description": "External utilities drawn from uniform, normal or lognormal (discretised to 1..10) distributions, 5 seeds; S re-selected or kept from the main comparison.",
+  "type": "runs",
+  "plans": [
+    "x5",
+    "x5b"
+  ],
+  "n_units": 360,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {
+    "weights": "numpy.random.default_rng(seed), seed = 0..4"
+  },
+  "results": "results/utility_distribution/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py utility_distribution"
+}

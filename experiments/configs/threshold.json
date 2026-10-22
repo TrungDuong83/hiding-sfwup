@@ -1,0 +1,17 @@
+{
+  "experiment": "threshold",
+  "paper": "Section 5.3.3, Table 14",
+  "description": "xi = multiplier x main xi on chess, retail, kosarak, bms-pos (4 multipliers each); S re-selected at each xi or fixed.",
+  "type": "runs",
+  "plans": [
+    "x3_prop",
+    "x3_base",
+    "x3_base_fixed"
+  ],
+  "n_units": 192,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {},
+  "results": "results/threshold/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py threshold"
+}

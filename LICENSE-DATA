@@ -1,0 +1,27 @@
+Data license
+
+The following files were created by the authors and are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/):
+
+  - the internal utilities (iu) in data/datasets/*_quantities.txt.gz,
+  - the external utilities (eu) in data/utilities/ (including data/utilities/variants/),
+  - the workload files in data/workloads/,
+  - the results in results/,
+  - the screening decisions and reason codes of the literature search in
+    literature_search/records.csv (columns A_match, B_match, screening_stage, decision,
+    reason_code), literature_search/candidates_review.csv and
+    literature_search/scholar_browser_screening.csv (decision, reason and note columns), and
+    the counts in literature_search/prisma.json.
+
+Copyright (c) 2026 Duong M. Trung, Trinh D. D. Nguyen, Philippe Fournier-Viger, Bay Vo
+
+Not covered by this license:
+
+  - The item lists, i.e. which items occur in which transaction, come from the original
+    datasets (see data/SOURCES.md). Their terms are those of the original providers; please
+    cite the original sources listed in data/SOURCES.md.
+  - The bibliographic metadata in literature_search/ (titles, years, venues, DOIs, URLs) was
+    retrieved from the services named in literature_search/README.md and remains subject to
+    the terms of each source.
+
+The code is licensed separately under the MIT License (see LICENSE).

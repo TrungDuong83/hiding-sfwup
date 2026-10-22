@@ -1,0 +1,15 @@
+{
+  "experiment": "ordering_control",
+  "paper": "Section 5.3.2, Table 13(a) (SC-only, ordered by wus)",
+  "description": "SC-only victim with the SFWUP processed in wus(X)-descending order (RISWU not used).",
+  "type": "runs",
+  "plans": [
+    "x2c"
+  ],
+  "n_units": 7,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {},
+  "results": "results/ordering_control/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py ordering_control"
+}

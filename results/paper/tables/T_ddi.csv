@@ -1,0 +1,4 @@
+group,n,spearman_ddi_mc,spearman_ddi_ius,spearman_ddi_tmr
+all runs,1699,0.771695,-0.821906,0.977655
+our method,1099,0.910843,-0.934455,0.980509
+baselines,544,0.424073,-0.565785,1.0

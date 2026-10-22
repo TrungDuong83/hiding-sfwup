@@ -1,0 +1,37 @@
+// Fig. 1: Algorithm 1 and its procedure HideOne. Render: dot -Tpdf fig1_algorithm.dot
+// Line numbers inside cluster_hide are those of procedure HideOne.
+digraph alg1 {
+  graph [rankdir=TB, fontname="Arial", fontsize=9, nodesep=0.3, ranksep=0.3];
+  node [shape=box, style=rounded, fontname="Arial", fontsize=9];
+  edge [fontname="Arial", fontsize=8];
+  in [label="Input: Q, S, ξ, strategy"];
+  p1 [label=<Phase 1 (lines 1-4):<BR/>twu(T<SUB>j</SUB>), sumtwu; SC, NSC, Wt<BR/>(once, on Q)>];
+  p2 [label=<Phase 2 (lines 5-6):<BR/>initial victim v<SUB>0</SUB>(X) on Q<BR/>(Sub-Alg. 1);<BR/>order S by decreasing<BR/>RISWU(v<SUB>0</SUB>(X), X),<BR/>ties by item identifier>];
+  l7 [label="line 7: HideOne(X)\nfor each X in this order"];
+  p3 [label="Phase 3 (lines 8-11):\nR = {X ∈ S : wus(X) ≥ ξ}\nat the start of each round;\nHideOne(X) for X ∈ R\nin the order of line 6;\nrepeat until R = ∅"];
+  out [label="Return Q' (line 12)"];
+  subgraph cluster_hide { label="HideOne(X)"; style="rounded,dashed";
+    h1 [shape=diamond, style="", label="(1) wus(X) < ξ ?"];
+    h2 [label="(2) victim re-selected on the\ncurrent database (Sub-Alg. 1),\nkept for the call"];
+    w [shape=diamond, style="", label="(4-16) while\nwus(X) ≥ ξ ?"];
+    tn [label=<T<SUB>X</SUB> and N (lines 6-7)>];
+    a [label="α (Prop. 3, line 8)"];
+    pos [label=<α &gt; 0:<BR/>contributions (Sub-Alg. 2)<BR/>→ allocation (Sub-Alg. 3, Prop. 4)<BR/>→ apply: iu, S(T<SUB>j</SUB>), twu(T<SUB>j</SUB>),<BR/>sumtwu (lines 10-12)>];
+    zero [label="α = 0 (wus = ξ):\nescalation\n(Sub-Alg. 4,\nline 14)"];
+    ret [shape=oval, style="", label="return"];
+  }
+  in -> p1 -> p2 -> l7 -> p3 -> out;
+  p3 -> p3 [label="R ≠ ∅"];
+  l7 -> h1 [style=dashed, label="calls"];
+  p3 -> h1 [style=dashed, label="calls"];
+  h1 -> ret [label="yes"];
+  h1 -> h2 [label="no"];
+  h2 -> w;
+  w -> tn [label="yes"];
+  w -> ret [label="no"];
+  tn -> a;
+  a -> pos [label="α > 0"];
+  a -> zero [label="α = 0"];
+  pos -> w [label="back to the while test"];
+  zero -> w;
+}

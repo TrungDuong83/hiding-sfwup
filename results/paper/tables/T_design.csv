@@ -1,0 +1,15 @@
+experiment,datasets,varied_factor,selection_of_S,seeds_or_orders,runs_per_method,runs_by_method,runs_ours,runs_baselines,runs_greedy,runs_without_removal,total_runs
+main comparison,all 7,none (main threshold xi),main selection,1,7,SC-only: 7; SDIF: 7; Max-RISWU: 7; Min-RISWU: 7; SMSE: 7; MSU-MIU: 7,28,14,0,0,42
+ablation: RISWU variants,all 7,"RISWU weight W = Wt (without twu) or W = twu (without Wt); Max-RISWU, Min-RISWU",main selection,1,7,Max-RISWU without twu: 7; Min-RISWU without twu: 7; Max-RISWU without Wt: 7; Min-RISWU without Wt: 7,28,0,0,0,28
+ablation: wus ordering,all 7,"SC-only victim, S ordered by wus(X) instead of RISWU",main selection,1,7,"SC-only, ordered by wus: 7",7,0,0,0,7
+ablation: greedy modification,all 7,"greedy-batch, greedy-unit (victim SDIF)",main selection,1,7,greedy-batch: 7; greedy-unit: 7,0,0,14,0,14
+ablation: SWM without removal,"Chess, Mushroom, Retail, Chainstore",regular SWM step never deletes the victim,main selection,1,16,SWM without removal: 16,0,0,0,16,16
+threshold,"Chess, Retail, Kosarak, BMS-POS",xi multiplier (4 per dataset),re-selected at each xi / fixed (main S still frequent),1,32,SC-only: 32; SDIF: 32; Max-RISWU: 32; Min-RISWU: 32; SMSE: 32; MSU-MIU: 32,128,64,0,0,192
+workload,"Chess, Mushroom, Retail, Kosarak","selection (high overlap, low overlap, random) x proportion (10, 25, 50 %)",by selection rule; random: 5 seeds,5 seeds (random),84,SC-only: 84; SDIF: 84; Max-RISWU: 84; Min-RISWU: 84; SMSE: 84; MSU-MIU: 84,336,168,0,0,504
+utility distribution,"Chess, Kosarak","external utilities: uniform, normal, log-normal",re-selected on each table / fixed (main S),5 draws,60,SC-only: 60; SDIF: 60; Max-RISWU: 60; Min-RISWU: 60; SMSE: 60; MSU-MIU: 60,240,120,0,0,360
+scalability,"Kosarak, Chainstore","sample size 10, 20, ..., 100 % (nested samples)",main rule on each sample,3 orders,60,SC-only: 60; SDIF: 60; Max-RISWU: 60; Min-RISWU: 60; SMSE: 60; MSU-MIU: 60,240,120,0,0,360
+"scalability, early run (4 sizes)","Kosarak, Chainstore","sample size 10, 25, 50, 100 %",main rule on each sample,1 order,8,SDIF: 8; SMSE: 8; MSU-MIU: 8,8,16,0,0,24
+lower threshold,all 7 (feasible Q'),"attacker threshold (1 - delta) xi, delta = 5, 10, 20 %",as in the source experiment,-,0 (analysis),,0,0,0,0,0
+equal margin,all 7,"every method hides below xi_t = (1 - delta) xi, delta = 5, 10, 20 %",main selection,1,21,SC-only: 21; SDIF: 21; Max-RISWU: 21; Min-RISWU: 21; SMSE: 21; MSU-MIU: 21; greedy-batch: 21; greedy-unit: 21,84,42,42,0,168
+total,,,,,,SMSE main: 7; SMSE other: 265; MSU-MIU main: 7; MSU-MIU other: 265,1099,544,56,16,1715
+total used for the DDI correlation (ours + baselines + greedy),,,,,,,,,,,1699

@@ -1,0 +1,18 @@
+{
+  "experiment": "workload",
+  "paper": "Section 5.3.4, Table 15",
+  "description": "SFWUP chosen by overlap (high / low) or at random, |S| = max(5, floor(rho * pool)), rho in {0.10, 0.25, 0.50}.",
+  "type": "runs",
+  "plans": [
+    "x4",
+    "x4_base"
+  ],
+  "n_units": 504,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {
+    "random_S": "numpy.random.default_rng(seed), seed = 0..4"
+  },
+  "results": "results/workload/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py workload"
+}

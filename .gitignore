@@ -1,0 +1,8 @@
+# re-runs (units, Q', logs) and local literature-search responses
+runs/
+literature_search/raw/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/

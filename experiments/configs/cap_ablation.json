@@ -1,0 +1,15 @@
+{
+  "experiment": "cap_ablation",
+  "paper": "Section 5.3.2, Table 13(c) (SWM without removal)",
+  "description": "Regular SWM step capped so that it never deletes the victim (diu <= iu - 1); 4 strategies on the 4 datasets where this variant is feasible.",
+  "type": "runs",
+  "plans": [
+    "x1_cap"
+  ],
+  "n_units": 16,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {},
+  "results": "results/cap_ablation/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py cap_ablation"
+}

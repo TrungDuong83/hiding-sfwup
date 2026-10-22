@@ -1,0 +1,57 @@
+{
+ "date": "2026-10-17",
+ "final_decisions_by": "authors",
+ "identified_per_source": {
+  "OpenAlex": 61,
+  "Crossref": 3515,
+  "Semantic Scholar": 1862,
+  "DBLP": 1,
+  "Google Scholar (manual browser search)": 169,
+  "Google Scholar via SerpAPI (experimental, incomplete)": 110
+ },
+ "identified_total": 5718,
+ "excluded_year_or_missing_year": 9,
+ "duplicates_removed": 3292,
+ "after_dedup": 2417,
+ "candidates_A_and_B": 19,
+ "screened": 2417,
+ "excluded_screening": 2397,
+ "excluded_screening_automated": 2258,
+ "excluded_screening_authors_scholar_browser": 139,
+ "excluded_screening_authors_reasons": {
+  "E2": 126,
+  "E3": 1,
+  "E4": 11,
+  "E5": 1
+ },
+ "reports_sought": 20,
+ "reports_not_retrieved": 1,
+ "not_retrieved": [
+  "A Border-Based Approach for Hiding Fuzzy Weighted Sensitive Itemsets"
+ ],
+ "reports_assessed": 19,
+ "reports_excluded": {
+  "E1": 1,
+  "E2": 11,
+  "E2+E3": 5,
+  "E4": 2
+ },
+ "pending_review": 0,
+ "included": 0,
+ "per_source_after_dedup": {
+  "OpenAlex": 38,
+  "Crossref": 1194,
+  "Semantic Scholar": 1204,
+  "DBLP": 1,
+  "Google Scholar (manual browser search)": 155,
+  "Google Scholar via SerpAPI (experimental, incomplete)": 81
+ },
+ "per_source_candidates": {
+  "OpenAlex": 0,
+  "Crossref": 3,
+  "Semantic Scholar": 5,
+  "DBLP": 0,
+  "Google Scholar (manual browser search)": 16,
+  "Google Scholar via SerpAPI (experimental, incomplete)": 18
+ }
+}

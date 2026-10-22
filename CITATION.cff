@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code or data, please cite the paper "An Efficient Method for Hiding
+  Sensitive Frequent Weighted Utility Patterns" by Duong M. Trung, Trinh D. D. Nguyen,
+  Philippe Fournier-Viger and Bay Vo, and this software.
+type: software
+title: "Hiding_SFWUP: code and data"
+version: 1.0.0
+license: MIT
+date-released: "2026-10-27"
+repository-code: "https://github.com/TrungDuong83/hiding-sfwup"
+url: "https://github.com/TrungDuong83/hiding-sfwup"
+authors:
+  - family-names: Duong
+    given-names: Trung Minh
+    affiliation: >-
+      Faculty of Information Technology, Ho Chi Minh City University of Economics and
+      Finance, Ho Chi Minh City, Viet Nam
+  - family-names: Nguyen
+    given-names: Trinh D. D.
+    affiliation: Faculty of Information Technology, HUTECH University, Ho Chi Minh City, Viet Nam
+  - family-names: Fournier-Viger
+    given-names: Philippe
+    affiliation: >-
+      College of Computer Science and Software Engineering, Shenzhen University, Shenzhen,
+      China
+  - family-names: Vo
+    given-names: Bay
+    affiliation: Faculty of Information Technology, HUTECH University, Ho Chi Minh City, Viet Nam
+references:
+  - type: article
+    title: An Efficient Method for Hiding Sensitive Frequent Weighted Utility Patterns
+    authors:
+      - family-names: Duong
+        given-names: Trung Minh
+      - family-names: Nguyen
+        given-names: Trinh D. D.
+      - family-names: Fournier-Viger
+        given-names: Philippe
+      - family-names: Vo
+        given-names: Bay

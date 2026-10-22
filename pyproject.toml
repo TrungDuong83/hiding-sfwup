@@ -1,0 +1,15 @@
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "B", "UP"]
+ignore = ["E731", "E741", "N812", "N817", "N818", "N802", "N803", "N806", "N815", "N816", "B905", "B023", "B007", "UP015", "UP031"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["hiding_sfwup"]
+known-local-folder = ["common", "examples", "running_example"]

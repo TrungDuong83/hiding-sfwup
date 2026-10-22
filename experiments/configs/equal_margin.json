@@ -1,0 +1,15 @@
+{
+  "experiment": "equal_margin",
+  "paper": "Section 5.3.7, Table 18 (equal margin; the paper writes delta as gamma)",
+  "description": "Every method hides S below xi_t = (1 - delta) xi, delta in {5, 10, 20 %}; side effects measured at xi.",
+  "type": "runs",
+  "plans": [
+    "x7b"
+  ],
+  "n_units": 168,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {},
+  "results": "results/equal_margin/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py equal_margin"
+}

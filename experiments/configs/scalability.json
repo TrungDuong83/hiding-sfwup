@@ -1,0 +1,18 @@
+{
+  "experiment": "scalability",
+  "paper": "Section 5.3.6, Table 17, Fig. 3",
+  "description": "Nested transaction samples of kosarak and chainstore (10 sizes x 3 permutations; plus 4 sizes of one permutation).",
+  "type": "runs",
+  "plans": [
+    "x6",
+    "x6b"
+  ],
+  "n_units": 384,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {
+    "permutation": "numpy.random.default_rng(seed), seed = 0..2"
+  },
+  "results": "results/scalability/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py scalability"
+}

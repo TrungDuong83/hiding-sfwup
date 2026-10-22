@@ -1,0 +1,6 @@
+# Python 3.10.12. Direct dependencies, pinned to the versions used for the paper.
+numpy==2.2.6
+scipy==1.14.1
+matplotlib==3.10.9
+psutil==7.2.2
+pytest==9.1.1

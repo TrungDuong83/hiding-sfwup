@@ -1,0 +1,15 @@
+{
+  "experiment": "main_comparison",
+  "paper": "Section 5.3.1, Tables 11 and 12, Fig. 2",
+  "description": "Four proposed strategies (SDIF, Max-RISWU, Min-RISWU, SC-only) and the two baselines (SMSE, MSU-MIU) on 7 datasets at the main thresholds.",
+  "type": "runs",
+  "plans": [
+    "x1"
+  ],
+  "n_units": 42,
+  "budget_s": 7200.0,
+  "pythonhashseed": 0,
+  "seeds": {},
+  "results": "results/main_comparison/summary.csv",
+  "run": "env PYTHONHASHSEED=0 python experiments/run_experiments.py main_comparison"
+}

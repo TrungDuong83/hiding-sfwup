@@ -1,0 +1,8 @@
+dataset,n_trans,n_items,avg_len,max_len,density_pct,type,avg_len_unrounded,density_pct_unrounded,n_trans_with_repeated_item
+Chess,3196,75,37.00,37,49.333,dense,37.0,49.333333,0
+Mushroom,8416,119,23.00,23,19.328,dense,23.0,19.327731,0
+Accident,340183,468,33.81,51,7.224,dense,33.807892,7.223908,0
+Retail,88162,16470,10.31,76,0.063,sparse,10.305755,0.062573,0
+Kosarak,990002,41270,8.10,2497,0.020,sparse,8.099972,0.019627,27
+BMS-POS,515596,1657,6.53,164,0.394,sparse,6.530344,0.394106,0
+Chainstore,1112949,46086,7.23,170,0.016,sparse,7.226638,0.015681,0

@@ -1,0 +1,17 @@
+{
+  "experiment": "threshold_lowering",
+  "paper": "Section 5.3.7, Table 18 (lower threshold; the paper writes delta' as gamma)",
+  "description": "Re-exposure of the hidden SFWUP when an adversary mines Q' at (1 - delta') xi, delta' in {5, 10, 20 %}, for every feasible Q' of main_comparison, cap_ablation, reduction_mechanism, riswu_variants, ordering_control and equal_margin.",
+  "type": "analysis",
+  "inputs": [
+    "main_comparison",
+    "cap_ablation",
+    "reduction_mechanism",
+    "riswu_variants",
+    "ordering_control",
+    "equal_margin"
+  ],
+  "pythonhashseed": 0,
+  "results": "results/threshold_lowering/",
+  "run": "env PYTHONHASHSEED=0 python scripts/reexposure.py main_comparison cap_ablation reduction_mechanism riswu_variants ordering_control equal_margin"
+}

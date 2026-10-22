@@ -1,0 +1,20 @@
+{
+  "experiment": "ddi_correlation",
+  "paper": "Section 5.3.8 (Spearman correlation over 1,699 runs; no table)",
+  "description": "Spearman correlation of DDI with MC, IUS and TMR over the units of every experiment except cap_ablation (descriptive only).",
+  "type": "analysis",
+  "inputs": [
+    "main_comparison",
+    "reduction_mechanism",
+    "riswu_variants",
+    "ordering_control",
+    "threshold",
+    "workload",
+    "utility_distribution",
+    "scalability",
+    "equal_margin"
+  ],
+  "pythonhashseed": 0,
+  "results": "results/paper/tables/T_ddi.csv",
+  "run": "env PYTHONHASHSEED=0 python scripts/paper_assets.py --tables-only"
+}
